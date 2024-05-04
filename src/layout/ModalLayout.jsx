@@ -7,7 +7,7 @@ const ModalLayout = ({ setScroll }) => {
   };
   return (
     <div
-      className="overlay w-full h-full backdrop-blur-md bg-slate-800 fixed inset-0 bg-opacity-20"
+      className="overlay w-full h-full backdrop-blur-md bg-slate-800 fixed inset-0 bg-opacity-20 z-50"
       onClick={handleOverLay}
     >
       <figure className="inset-0 md:h-fit md:w-1/2 lg:h-fit lg:w-1/2 xl:w-1/3 h-full w-full bg-slate-700 z-10  fixed mx-auto my-auto transition-all backdrop-blur-md p-10">
