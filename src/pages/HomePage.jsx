@@ -44,11 +44,7 @@ const HomePage = () => {
             <RiSupabaseFill className="w-5 h-5 text-green-400 absolute right-[15%] top-[40%] z-30 animate-ping hover:animate-none cursor-pointer hover:w-10 hover:h-10" />
             <SiReactquery className="w-5 h-5 text-green-600 absolute left-[5%] top-[70%] z-30 animate-ping hover:animate-none cursor-pointer hover:w-10 hover:h-10" />
           </div>
-          <img
-            src="/blob/main/src/images/self.png"
-            alt=""
-            className=" aspect-square w-full lg:w-4/6 z-30"
-          />
+          <div className="aspect-square w-full lg:w-4/6 z-30 bg-self-img bg-cover"></div>
         </figure>
       </section>
     </main>
