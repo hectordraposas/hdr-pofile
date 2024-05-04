@@ -37,7 +37,7 @@ const HomePage = ({ setScrollBehavior, scroll }) => {
                 Learn More
               </button>
             </figure>
-            <h1 className="font-extrabold text-center mt-10">Tech Stack</h1>
+            <h1 className="font-extrabold text-center mt-20">Tech Stack</h1>
             <figure className="mt-3 flex justify-center gap-5">
               <FaHtml5 className=" text-3xl text-blue-600" />
               <FaCss3Alt className=" text-3xl text-blue-600" />

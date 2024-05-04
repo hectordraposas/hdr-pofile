@@ -11,6 +11,7 @@ const LoginModalLayout = ({ loginModal }) => {
       onClick={handleOverLay}
     >
       <button className="float-right md:block hidden mr-9 mt-5 text-3xl text-red-700">
+        x
         <IoMdCloseCircle onClick={handleOverLay} />
       </button>
       <figure className="inset-0 md:h-fit md:w-1/2 lg:h-fit lg:w-1/2 xl:w-1/3 h-full w-full bg-slate-700 z-10  fixed mx-auto my-auto transition-all backdrop-blur-md p-10">
