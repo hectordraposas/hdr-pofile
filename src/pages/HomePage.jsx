@@ -7,8 +7,15 @@ import { FaNode } from "react-icons/fa";
 import { FaCodeBranch } from "react-icons/fa";
 import { RiSupabaseFill } from "react-icons/ri";
 import { SiReactquery } from "react-icons/si";
-import { GiAngelWings } from "react-icons/gi";
-const HomePage = () => {
+import { useState } from "react";
+import CertModalLayout from "../layout/CertModalLayout";
+const HomePage = ({ setScrollBehavior, scroll }) => {
+  const [showCertModal, setCertShowModal] = useState(false);
+
+  const certModal = () => {
+    setScrollBehavior(!scroll);
+    setCertShowModal(!showCertModal);
+  };
   return (
     <main className="h-full w-full mx-auto bg-slate-50">
       <section className="flex">
@@ -23,7 +30,10 @@ const HomePage = () => {
               do interactive websites that are user-friendly.
             </h3>
             <figure className="flex justify-center">
-              <button className="bg-blue-600 text-slate-50 py-2 px-5 rounded-md">
+              <button
+                className="bg-blue-600 text-slate-50 py-2 px-5 rounded-md"
+                onClick={certModal}
+              >
                 Learn More
               </button>
             </figure>
@@ -47,6 +57,8 @@ const HomePage = () => {
           <div className="aspect-square w-full lg:w-4/6 z-30 bg-self-img bg-cover"></div>
         </figure>
       </section>
+
+      {showCertModal && <CertModalLayout certModal={certModal} />}
     </main>
   );
 };

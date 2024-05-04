@@ -1,11 +1,18 @@
 import React, { useState } from "react";
-import ModalLayout from "./ModalLayout";
+import LoginModalLayout from "./LoginModalLayout";
 import { Link } from "react-router-dom";
+import CertModalLayout from "./CertModalLayout";
 
 const NavBarLayout = ({ setScrollBehavior, scroll }) => {
   const [showModal, setShowModal] = useState(false);
+  const [showCertModal, setShowCertModal] = useState(false);
 
-  const setScroll = () => {
+  const certModal = () => {
+    setScrollBehavior(!scroll);
+    setShowModal(!showCertModal);
+  };
+
+  const loginModal = () => {
     setScrollBehavior(!scroll);
     setShowModal(!showModal);
   };
@@ -23,13 +30,14 @@ const NavBarLayout = ({ setScrollBehavior, scroll }) => {
           <Link to="faq">FAQ</Link>
         </li>
         <li
-          onClick={setScroll}
+          onClick={loginModal}
           className="hover:text-slate-50 hover:tracking-wide transition-all"
         >
           Login
         </li>
       </ul>
-      {showModal && <ModalLayout setScroll={setScroll} />}
+      {showModal && <LoginModalLayout loginModal={loginModal} />}
+      {showCertModal && <CertModalLayout certModal={certModal} />}
     </nav>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
 
-const ModalLayout = ({ setScroll }) => {
+const LoginModalLayout = ({ loginModal }) => {
   const handleOverLay = (e) => {
     if (e.currentTarget !== e.target) return;
-    setScroll();
+    loginModal();
   };
   return (
     <div
@@ -49,12 +49,12 @@ const ModalLayout = ({ setScroll }) => {
               </button>
             </div>
           </figure>
-          <div class="relative py-4">
-            <div class="absolute inset-0 flex items-center">
-              <div class="w-full border-b border-gray-300"></div>
+          <div className="relative py-4">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-b border-gray-300"></div>
             </div>
-            <div class="relative flex justify-center">
-              <span class="bg-white px-4 text-sm text-gray-950">
+            <div className="relative flex justify-center">
+              <span className="bg-white px-4 text-sm text-gray-950">
                 Log in with
               </span>
             </div>
@@ -73,4 +73,4 @@ const ModalLayout = ({ setScroll }) => {
   );
 };
 
-export default ModalLayout;
+export default LoginModalLayout;

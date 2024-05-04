@@ -9,6 +9,7 @@ import "/src/styles.css";
 
 function App() {
   const [scroll, setScroll] = useState(false);
+
   useEffect(() => {
     if (scroll) {
       document.body.classList.add("scroll-off");
@@ -26,7 +27,7 @@ function App() {
     <>
       <HashRouter>
         <NavBarLayout setScrollBehavior={setScrollBehavior} scroll={scroll} />
-        <Routers />
+        <Routers setScrollBehavior={setScrollBehavior} scroll={scroll} />
       </HashRouter>
       <FooterLaoyout />
     </>
