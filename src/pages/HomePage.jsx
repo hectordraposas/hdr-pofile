@@ -39,10 +39,10 @@ const HomePage = () => {
         </figure>
         <figure className="hidden md:flex text-center w-full h-[calc(100vh_-_105px)] bg-slate-50 overflow-hidden justify-center relative">
           <div className="w-full absolute rounded-screen h-screen">
-            <FaNode className="w-5 h-5 text-green-300 absolute right-[15%] top-[10%] z-30 animate-ping hover:animate-none cursor-pointer hover:w-10 hover:h-10" />
-            <FaCodeBranch className="w-5 h-5 text-red-400 absolute left-[10%] top-[10%] animate-ping hover:animate-none cursor-pointer hover:w-10 hover:h-10" />
-            <RiSupabaseFill className="w-5 h-5 text-green-400 absolute right-[15%] top-[40%] z-30 animate-ping hover:animate-none cursor-pointer hover:w-10 hover:h-10" />
-            <SiReactquery className="w-5 h-5 text-green-600 absolute left-[5%] top-[70%] z-30 animate-ping hover:animate-none cursor-pointer hover:w-10 hover:h-10" />
+            <FaNode className="transition-all w-5 h-5 text-green-300 absolute right-[15%] top-[10%] z-30 animate-ping hover:animate-none cursor-pointer hover:w-20 hover:h-20" />
+            <FaCodeBranch className="transition-all w-5 h-5 text-red-400 absolute left-[10%] top-[10%] animate-ping hover:animate-none cursor-pointer hover:w-20 hover:h-20" />
+            <RiSupabaseFill className="transition-all w-5 h-5 text-green-400 absolute right-[15%] top-[40%] z-30 animate-ping hover:animate-none cursor-pointer hover:w-20 hover:h-20" />
+            <SiReactquery className="transition-all w-5 h-5 text-green-600 absolute left-[5%] top-[70%] z-30 animate-ping hover:animate-none cursor-pointer hover:w-20 hover:h-20" />
           </div>
           <div className="aspect-square w-full lg:w-4/6 z-30 bg-self-img bg-cover"></div>
         </figure>
