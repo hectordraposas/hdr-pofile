@@ -45,7 +45,7 @@ const HomePage = () => {
             <SiReactquery className="w-5 h-5 text-green-600 absolute left-[5%] top-[70%] z-30 animate-ping hover:animate-none cursor-pointer hover:w-10 hover:h-10" />
           </div>
           <img
-            src="./blob/main/src/images/self.png"
+            src="/blob/main/src/images/self.png"
             alt=""
             className=" aspect-square w-full lg:w-4/6 z-30"
           />
