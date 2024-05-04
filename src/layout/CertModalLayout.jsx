@@ -1,8 +1,8 @@
 import React from "react";
 
 const CertModalLayout = ({ certModal }) => {
-  const handleOverLay = (e) => {
-    if (e.currentTarget !== e.target) return;
+  const handleOverLay = (event) => {
+    if (event.currentTarget !== event.target) return;
     certModal();
   };
   return (

@@ -5,12 +5,6 @@ import CertModalLayout from "./CertModalLayout";
 
 const NavBarLayout = ({ setScrollBehavior, scroll }) => {
   const [showModal, setShowModal] = useState(false);
-  const [showCertModal, setShowCertModal] = useState(false);
-
-  const certModal = () => {
-    setScrollBehavior(!scroll);
-    setShowModal(!showCertModal);
-  };
 
   const loginModal = () => {
     setScrollBehavior(!scroll);
@@ -37,7 +31,6 @@ const NavBarLayout = ({ setScrollBehavior, scroll }) => {
         </li>
       </ul>
       {showModal && <LoginModalLayout loginModal={loginModal} />}
-      {showCertModal && <CertModalLayout certModal={certModal} />}
     </nav>
   );
 };
